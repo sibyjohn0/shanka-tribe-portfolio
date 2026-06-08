@@ -371,6 +371,34 @@
             font-family: 'EB Garamond', serif;
         }
 
+        .festivals-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 50px;
+            flex-wrap: wrap;
+        }
+
+        .festival-item {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex: 0 1 auto;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .festival-item:hover {
+            opacity: 1;
+        }
+
+        .festival-item img {
+            max-height: 80px;
+            max-width: 150px;
+            object-fit: contain;
+        }
+
         /* WHAT'S AHEAD */
         .ahead-grid {
             display: grid;
@@ -916,6 +944,23 @@
         </div>
     </div>
     <div class="shows-title">100+ Live Shows</div>
+    <div class="festivals-grid">
+        <div class="festival-item">
+            <img src="./images/page07_img05.png" alt="Bloom in Green">
+        </div>
+        <div class="festival-item">
+            <img src="./images/page07_img06.png" alt="the lil hed">
+        </div>
+        <div class="festival-item">
+            <img src="./images/page07_img08.png" alt="Echoes of Earth">
+        </div>
+        <div class="festival-item">
+            <img src="./images/page13_img01.png" alt="indie xarai">
+        </div>
+        <div class="festival-item">
+            <img src="./images/page14_img00.png" alt="Covelong Point">
+        </div>
+    </div>
 </section>
 
 <!-- WHAT'S AHEAD -->
