@@ -474,7 +474,7 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0;
-            align-items: stretch;
+            align-items: center;
         }
 
         .shows-left {
@@ -483,12 +483,12 @@
 
         .shows-right {
             background: var(--dark-brown);
-            padding: 0 40px;
+            padding: 40px 60px;
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 0 -60px;
-            padding-right: calc(40px - 60px);
+            min-height: auto;
         }
 
         /* WHAT'S AHEAD */
