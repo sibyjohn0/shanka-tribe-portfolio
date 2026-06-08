@@ -1,0 +1,1131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shanka Tribe - Organic Trance & World Music</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.7;
+            color: #333;
+            font-size: 16px;
+        }
+
+        h1, h2, h3, h4, h5, h6, .section-title {
+            font-family: 'EB Garamond', 'Garamond', serif;
+        }
+
+        :root {
+            --dark-brown: #5A4A3E;
+            --cream: #F9F7F4;
+            --green: #4A5D4A;
+            --white: #FFFFFF;
+            --light-gray: #E8E5E0;
+            --text-gray: #666666;
+        }
+
+        /* COVER */
+        .cover {
+            background: linear-gradient(135deg, #6B5A4E 0%, #5A4A3E 100%);
+            color: var(--cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        .logo-container {
+            max-width: 280px;
+            margin-bottom: 40px;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cover h1 {
+            font-size: 62px;
+            font-weight: 600;
+            letter-spacing: 2px;
+            color: var(--cream);
+            margin-bottom: 25px;
+        }
+
+        .cover .subtitle {
+            font-size: 16px;
+            font-style: italic;
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            font-weight: 300;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .cover .location {
+            font-size: 12px;
+            letter-spacing: 2px;
+            text-transform: capitalize;
+            color: var(--light-gray);
+            margin-top: 20px;
+            font-weight: 400;
+        }
+
+        /* SECTION BASE */
+        .section {
+            padding: 70px 60px;
+            max-width: 1300px;
+            margin: 0 auto;
+        }
+
+        .section-dark {
+            background: var(--dark-brown);
+            color: var(--cream);
+        }
+
+        .section-green {
+            background: var(--green);
+            color: var(--white);
+        }
+
+        .section-cream {
+            background: var(--cream);
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            margin-bottom: 40px;
+            text-transform: capitalize;
+        }
+
+        .section-cream .section-title {
+            color: var(--dark-brown);
+        }
+
+        .section-green .section-title {
+            color: var(--white);
+        }
+
+        /* ABOUT */
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.1fr;
+            gap: 80px;
+            align-items: start;
+        }
+
+        .about-text h2 {
+            font-size: 40px;
+            color: var(--dark-brown);
+            font-weight: 600;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            color: var(--text-gray);
+        }
+
+        .about-image {
+            border: 1px solid var(--light-gray);
+        }
+
+        .about-image img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        /* INSTRUMENTS */
+        .instruments-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 45px 70px;
+            margin-top: 40px;
+        }
+
+        .instrument-item {
+            display: flex;
+            gap: 12px;
+        }
+
+        .instrument-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--light-gray);
+            border-radius: 50%;
+            flex-shrink: 0;
+            margin-top: 6px;
+        }
+
+        .instrument-content h3 {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .instrument-content p {
+            font-size: 13px;
+            opacity: 0.85;
+        }
+
+        /* BAND MEMBERS */
+        .band-container {
+            margin-top: 45px;
+        }
+
+        .band-row {
+            display: flex;
+            justify-content: center;
+            gap: 18px;
+            flex-wrap: wrap;
+        }
+
+        .band-member {
+            text-align: center;
+            flex: 0 0 auto;
+            width: 130px;
+        }
+
+        .member-photo {
+            border: 1px solid rgba(0,0,0,0.1);
+            margin-bottom: 10px;
+            aspect-ratio: 3/4;
+            overflow: hidden;
+        }
+
+        .member-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .member-name {
+            font-size: 12px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .member-instruments {
+            font-size: 10px;
+            opacity: 0.7;
+            line-height: 1.4;
+        }
+
+        /* UMOJA */
+        .umoja-grid {
+            display: grid;
+            grid-template-columns: 280px 1fr;
+            gap: 80px;
+            align-items: start;
+            margin-top: 40px;
+        }
+
+        .umoja-cover {
+            border: 1px solid rgba(255,255,255,0.15);
+            aspect-ratio: 0.7;
+            overflow: hidden;
+        }
+
+        .umoja-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .umoja-content h2 {
+            font-size: 52px;
+            color: var(--cream);
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .umoja-content .ep-label {
+            font-size: 11px;
+            color: var(--light-gray);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            font-weight: 500;
+        }
+
+        .umoja-content .tagline {
+            font-size: 16px;
+            color: var(--cream);
+            font-style: italic;
+            margin: 20px 0 25px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .umoja-content p {
+            font-size: 14px;
+            line-height: 1.8;
+            color: rgba(255,255,255,0.8);
+        }
+
+        /* TRACKS */
+        .tracks-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            margin-top: 50px;
+        }
+
+        .track {
+            padding-bottom: 35px;
+            border-bottom: 1px solid var(--light-gray);
+        }
+
+        .track:nth-child(3) {
+            grid-column: 1 / -1;
+            border-bottom: none;
+        }
+
+        .track-number {
+            font-size: 42px;
+            color: #e8e8e8;
+            font-weight: 300;
+            margin-bottom: 8px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .track-title {
+            font-size: 24px;
+            color: var(--dark-brown);
+            font-weight: 600;
+            margin-bottom: 12px;
+            font-family: 'EB Garamond', serif;
+        }
+
+        .track-desc {
+            font-size: 13px;
+            color: var(--text-gray);
+            line-height: 1.7;
+        }
+
+        /* JOURNEY */
+        .journey-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 45px;
+        }
+
+        .album-item {
+            text-align: center;
+        }
+
+        .album-cover {
+            border: 1px solid var(--dark-brown);
+            margin-bottom: 12px;
+            aspect-ratio: 1;
+            overflow: hidden;
+        }
+
+        .album-cover img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .album-title {
+            font-size: 11px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .album-year {
+            font-size: 10px;
+            color: var(--text-gray);
+        }
+
+        .shows-title {
+            font-size: 15px;
+            font-weight: 600;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        /* WHAT'S AHEAD */
+        .ahead-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 35px;
+            margin-top: 45px;
+        }
+
+        .milestone-card {
+            background: rgba(0,0,0,0.12);
+            border: 1px solid rgba(255,255,255,0.15);
+            padding: 32px;
+            text-align: center;
+        }
+
+        .milestone-title {
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 10px;
+            text-transform: capitalize;
+        }
+
+        .milestone-date {
+            font-size: 12px;
+            opacity: 0.8;
+            margin-bottom: 12px;
+        }
+
+        .milestone-status {
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* SPOTIFY */
+        .spotify-main {
+            display: grid;
+            grid-template-columns: 240px 1fr;
+            gap: 80px;
+            margin-top: 40px;
+            align-items: start;
+        }
+
+        .stat-circle {
+            width: 220px;
+            height: 220px;
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .stat-circle .number {
+            font-size: 48px;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 8px;
+        }
+
+        .stat-circle .label {
+            font-size: 9px;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .countries-header {
+            font-size: 14px;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 25px;
+        }
+
+        .country-list {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .country-item {
+            display: grid;
+            grid-template-columns: 20px 1fr auto;
+            gap: 15px;
+            font-size: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .country-item:last-child {
+            border-bottom: none;
+        }
+
+        .country-rank {
+            color: var(--light-gray);
+            font-weight: 600;
+        }
+
+        .country-name {
+            color: var(--cream);
+        }
+
+        .country-stat {
+            color: var(--light-gray);
+            font-weight: 600;
+        }
+
+        .stats-bottom {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 12px;
+            margin-top: 50px;
+            grid-column: 1 / -1;
+        }
+
+        .stat-card {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 18px;
+            text-align: center;
+        }
+
+        .stat-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--cream);
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            opacity: 0.7;
+        }
+
+        /* YOUTUBE */
+        .youtube-main {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 60px;
+            margin-top: 40px;
+            align-items: start;
+        }
+
+        .yt-stat-circle {
+            width: 180px;
+            height: 180px;
+            border: 1px solid rgba(0,0,0,0.1);
+            border-radius: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            background: var(--light-gray);
+        }
+
+        .yt-stat-circle .number {
+            font-size: 40px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            margin-bottom: 6px;
+        }
+
+        .yt-stat-circle .label {
+            font-size: 9px;
+            color: var(--text-gray);
+            text-transform: uppercase;
+        }
+
+        .yt-stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .yt-stat-box {
+            background: var(--light-gray);
+            border: 1px solid rgba(0,0,0,0.05);
+            padding: 18px;
+            text-align: center;
+        }
+
+        .yt-stat-value {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--dark-brown);
+            margin-bottom: 5px;
+        }
+
+        .yt-stat-label {
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            color: var(--text-gray);
+        }
+
+        /* MUSIC VIDEOS */
+        .videos-list {
+            margin-top: 40px;
+        }
+
+        .video-item {
+            display: grid;
+            grid-template-columns: 2fr 1fr 100px;
+            gap: 20px;
+            align-items: center;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.08);
+            font-size: 12px;
+        }
+
+        .video-item:last-child {
+            border-bottom: none;
+        }
+
+        .video-title {
+            color: var(--cream);
+        }
+
+        .video-views {
+            font-weight: 600;
+            color: var(--light-gray);
+            text-align: center;
+        }
+
+        .video-tag {
+            font-size: 9px;
+            background: var(--light-gray);
+            color: var(--dark-brown);
+            padding: 4px 8px;
+            font-weight: 700;
+            text-align: center;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-top: 40px;
+        }
+
+        .testimonial {
+            background: var(--dark-brown);
+            color: var(--cream);
+            padding: 28px;
+            min-height: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .testimonial-text {
+            font-size: 13px;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+
+        .testimonial-author {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--light-gray);
+            text-transform: uppercase;
+        }
+
+        /* PRESS */
+        .press-items {
+            margin-top: 40px;
+        }
+
+        .press-item {
+            margin-bottom: 30px;
+            padding-bottom: 25px;
+            border-bottom: 1px solid rgba(255,255,255,0.12);
+        }
+
+        .press-item:last-child {
+            border-bottom: none;
+        }
+
+        .press-publication {
+            font-size: 10px;
+            font-weight: 700;
+            color: var(--white);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 5px;
+        }
+
+        .press-headline {
+            font-size: 14px;
+            color: var(--cream);
+            line-height: 1.6;
+        }
+
+        /* CLOSING */
+        .closing {
+            background: linear-gradient(135deg, #6B5A4E 0%, #5A4A3E 100%);
+            color: var(--cream);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 60px 40px;
+        }
+
+        .closing h1 {
+            font-size: 68px;
+            color: var(--cream);
+            font-weight: 600;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        .closing-contact {
+            font-size: 13px;
+            margin: 12px 0;
+        }
+
+        .closing-contact a {
+            color: var(--cream);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .section { padding: 50px 30px; }
+            .about-grid, .umoja-grid, .spotify-main, .youtube-main { grid-template-columns: 1fr; }
+            .instruments-grid, .ahead-grid, .testimonials { grid-template-columns: 1fr; }
+            .journey-grid { grid-template-columns: repeat(3, 1fr); }
+            .stats-bottom, .yt-stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .section-title { font-size: 32px; }
+            .cover h1 { font-size: 48px; }
+        }
+    </style>
+</head>
+<body>
+
+<!-- COVER -->
+<section class="cover">
+    <div class="logo-container">
+        <img src="./images/page01_img00.png" alt="Shanka Tribe Logo">
+    </div>
+    <h1>Shanka Tribe</h1>
+    <p class="subtitle">Organic Trance • World Music</p>
+    <p class="location">Kerala, India</p>
+</section>
+
+<!-- ABOUT -->
+<section class="section section-cream">
+    <h2 class="section-title">About Shanka Tribe</h2>
+    <div class="about-grid">
+        <div class="about-text">
+            <h2>About<br>Shanka Tribe</h2>
+            <p>Hailing from Kerala, Shanka Tribe creates an immersive blend of organic trance and world music, channeling the pulse of ancestral rhythms and the spirit of unity. Their sound weaves together chants, tribal instruments, and global grooves to evoke deep emotion and movement.</p>
+            <p>Each performance begins with the blowing of the shankh—a ritual of awakening and purification. Shanka Tribe invites listeners into a journey of rhythm, connection, and inner elevation.</p>
+        </div>
+        <div class="about-image">
+            <img src="./images/page02_img01.png" alt="Band">
+        </div>
+    </div>
+</section>
+
+<!-- INSTRUMENTS -->
+<section class="section section-green">
+    <h2 class="section-title">The Unheard Sounds</h2>
+    <div class="instruments-grid">
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Djembe</h3>
+                <p>Tribal grooves from Africa</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Didgeridoo</h3>
+                <p>Aboriginal resonance from Australia</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Handpan</h3>
+                <p>Soul-touching vibrations from Switzerland</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Oud</h3>
+                <p>Ancient string tones of the Middle East</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Conga & Bongos</h3>
+                <p>Rhythmic call from Latin America</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Ukulele</h3>
+                <p>Melodic warmth of Hawaii</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Morchang</h3>
+                <p>Rustic desert sound from Rajasthan</p>
+            </div>
+        </div>
+        <div class="instrument-item">
+            <div class="instrument-dot"></div>
+            <div class="instrument-content">
+                <h3>Darbuka</h3>
+                <p>Distinctive Middle Eastern pulse</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BAND MEMBERS -->
+<section class="section section-green">
+    <h2 class="section-title">Band Members</h2>
+    <div class="band-container">
+        <div class="band-row">
+            <div class="band-member">
+                <div class="member-photo"><img src="./images/page04_img00.png" alt="Munna PM"></div>
+                <div class="member-name">Munna PM</div>
+                <div class="member-instruments">Handpan, Vocals</div>
+            </div>
+            <div class="band-member">
+                <div class="member-photo"><img src="./images/page04_img01.png" alt="Aswinlal"></div>
+                <div class="member-name">Aswinlal</div>
+                <div class="member-instruments">Bass Guitar</div>
+            </div>
+            <div class="band-member">
+                <div class="member-photo"><img src="./images/page04_img02.png" alt="Libin Noby"></div>
+                <div class="member-name">Libin Noby</div>
+                <div class="member-instruments">Keyboard</div>
+            </div>
+            <div class="band-member">
+                <div class="member-photo"><img src="./images/page04_img03.png" alt="Joel Jackson"></div>
+                <div class="member-name">Joel Jackson</div>
+                <div class="member-instruments">Drums</div>
+            </div>
+            <div class="band-member">
+                <div class="member-photo"><img src="./images/page04_img04.png" alt="Harikrishnan PV"></div>
+                <div class="member-name">Harikrishnan PV</div>
+                <div class="member-instruments">Oud, Guitar</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- UMOJA -->
+<section class="section section-dark">
+    <h2 class="section-title">Umoja</h2>
+    <div class="umoja-grid">
+        <div class="umoja-cover"><img src="./images/page05_img00.png" alt="UMOJA"></div>
+        <div class="umoja-content">
+            <h2>UMOJA</h2>
+            <div class="ep-label">The New EP</div>
+            <p class="tagline">Unity. Connection. Hope.</p>
+            <p>Umoja is a Swahili word meaning Unity. This EP is a musical reflection on togetherness, cultural memory, and the healing force of collective rhythm. Release: October 2025.</p>
+        </div>
+    </div>
+</section>
+
+<!-- TRACK CONCEPTS -->
+<section class="section section-cream">
+    <h2 class="section-title">Track Concepts</h2>
+    <div class="tracks-grid">
+        <div class="track">
+            <div class="track-number">01</div>
+            <div class="track-title">Karmi</div>
+            <p class="track-desc">Featuring Neha Nair. Shared origin and interconnectedness across cultures.</p>
+        </div>
+        <div class="track">
+            <div class="track-number">02</div>
+            <div class="track-title">Mhaso</div>
+            <p class="track-desc">Celebration of sisterhood, nurturing, and generational love.</p>
+        </div>
+        <div class="track">
+            <div class="track-number">03</div>
+            <div class="track-title">Ithemba</div>
+            <p class="track-desc">Prayer of hope—healing through humility, compassion, and community.</p>
+        </div>
+    </div>
+</section>
+
+<!-- JOURNEY -->
+<section class="section section-cream">
+    <h2 class="section-title">Journey So Far</h2>
+    <div class="journey-grid">
+        <div class="album-item">
+            <div class="album-cover"><img src="./images/page07_img00.png" alt="Album"></div>
+            <div class="album-title">When Nature Calls</div>
+            <div class="album-year">2021</div>
+        </div>
+        <div class="album-item">
+            <div class="album-cover"><img src="./images/page07_img01.png" alt="Album"></div>
+            <div class="album-title">Travelling Gypsies</div>
+            <div class="album-year">2022</div>
+        </div>
+        <div class="album-item">
+            <div class="album-cover"><img src="./images/page07_img04.png" alt="Album"></div>
+            <div class="album-title">Yele Yele</div>
+            <div class="album-year">2023</div>
+        </div>
+        <div class="album-item">
+            <div class="album-cover"><img src="./images/page07_img07.png" alt="Album"></div>
+            <div class="album-title">Eeyiam Pattu</div>
+            <div class="album-year">2024</div>
+        </div>
+        <div class="album-item">
+            <div class="album-cover"><img src="./images/page07_img09.png" alt="Album"></div>
+            <div class="album-title">Umoja EP</div>
+            <div class="album-year">2025</div>
+        </div>
+    </div>
+    <div class="shows-title">100+ LIVE PERFORMANCES</div>
+</section>
+
+<!-- WHAT'S AHEAD -->
+<section class="section section-green">
+    <h2 class="section-title">What Lies Ahead</h2>
+    <div class="ahead-grid">
+        <div class="milestone-card">
+            <div class="milestone-title">2 Singles Release</div>
+            <div class="milestone-date">July–August 2026</div>
+            <div class="milestone-status">✓ Confirmed</div>
+        </div>
+        <div class="milestone-card">
+            <div class="milestone-title">1 EP Release</div>
+            <div class="milestone-date">September 2026</div>
+            <div class="milestone-status">✓ Confirmed</div>
+        </div>
+        <div class="milestone-card">
+            <div class="milestone-title">Australia Tour</div>
+            <div class="milestone-date">October 2026</div>
+            <div class="milestone-status">○ In Planning</div>
+        </div>
+        <div class="milestone-card">
+            <div class="milestone-title">Ziro Festival</div>
+            <div class="milestone-date">September 2026</div>
+            <div class="milestone-status">✓ Confirmed</div>
+        </div>
+    </div>
+</section>
+
+<!-- SPOTIFY -->
+<section class="section section-dark">
+    <h2 class="section-title">Spotify Insights</h2>
+    <p style="opacity: 0.65; font-size: 12px; margin-bottom: 35px;">Nov 16, 2024 – Nov 15, 2025 | Worldwide</p>
+
+    <div class="spotify-main">
+        <div class="stat-circle">
+            <div class="number">878K+</div>
+            <div class="label">Total Audience</div>
+        </div>
+        <div>
+            <div class="countries-header">Top Countries</div>
+            <div class="country-list">
+                <div class="country-item">
+                    <span class="country-rank">1</span>
+                    <span class="country-name">India</span>
+                    <span class="country-stat">78K+</span>
+                </div>
+                <div class="country-item">
+                    <span class="country-rank">2</span>
+                    <span class="country-name">United States</span>
+                    <span class="country-stat">33K+</span>
+                </div>
+                <div class="country-item">
+                    <span class="country-rank">3</span>
+                    <span class="country-name">United Arab Emirates</span>
+                    <span class="country-stat">31K+</span>
+                </div>
+                <div class="country-item">
+                    <span class="country-rank">4</span>
+                    <span class="country-name">United Kingdom</span>
+                    <span class="country-stat">24K+</span>
+                </div>
+                <div class="country-item">
+                    <span class="country-rank">5</span>
+                    <span class="country-name">Germany</span>
+                    <span class="country-stat">18K+</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="stats-bottom">
+        <div class="stat-card">
+            <div class="stat-value">33,000</div>
+            <div class="stat-label">Followers</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">565K+</div>
+            <div class="stat-label">Listeners</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">2.5M+</div>
+            <div class="stat-label">Streams</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">91K+</div>
+            <div class="stat-label">Saves</div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-value">52K+</div>
+            <div class="stat-label">Playlist Adds</div>
+        </div>
+    </div>
+</section>
+
+<!-- YOUTUBE -->
+<section class="section section-cream">
+    <h2 class="section-title">YouTube Analytics</h2>
+    <p style="opacity: 0.6; font-size: 12px; margin-bottom: 35px; color: var(--text-gray);">Lifetime | As of April 2026</p>
+
+    <div class="youtube-main">
+        <div class="yt-stat-circle">
+            <div class="number">44.5K</div>
+            <div class="label">Subscribers</div>
+        </div>
+        <div class="yt-stats-grid">
+            <div class="yt-stat-box">
+                <div class="yt-stat-value">68.2M</div>
+                <div class="yt-stat-label">Impressions</div>
+            </div>
+            <div class="yt-stat-box">
+                <div class="yt-stat-value">21.8M</div>
+                <div class="yt-stat-label">Views</div>
+            </div>
+            <div class="yt-stat-box">
+                <div class="yt-stat-value">637.7K</div>
+                <div class="yt-stat-label">Watch Hours</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- MUSIC VIDEOS -->
+<section class="section section-green">
+    <h2 class="section-title">Music Videos</h2>
+    <div class="videos-list">
+        <div class="video-item">
+            <div class="video-title">Travelling Gypsies ft. 6091</div>
+            <div class="video-views">316.8M</div>
+            <div class="video-tag">FLAGSHIP</div>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Travelling Gypsies (Remix)</div>
+            <div class="video-views">1.8M</div>
+            <div></div>
+        </div>
+        <div class="video-item">
+            <div class="video-title">When Nature Calls</div>
+            <div class="video-views">1.4M</div>
+            <div></div>
+        </div>
+        <div class="video-item">
+            <div class="video-title">UMOJA EP</div>
+            <div class="video-views">539K</div>
+            <div></div>
+        </div>
+        <div class="video-item">
+            <div class="video-title">Yele</div>
+            <div class="video-views">259.6K</div>
+            <div></div>
+        </div>
+    </div>
+</section>
+
+<!-- ECHO OF THE PEOPLE -->
+<section class="section section-cream">
+    <h2 class="section-title">The Echo of the People</h2>
+    <p style="opacity: 0.6; font-size: 12px; margin-bottom: 35px; color: var(--text-gray);">6 Featured Community Voices</p>
+
+    <div class="testimonials">
+        <div class="testimonial">
+            <p class="testimonial-text">Masterpiece. UMOJA weaves djembe rhythms with Kerala soul into a 20-minute journey of pure unity.</p>
+            <p class="testimonial-author">@thejoelutionary</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">Most creative indie sound. Absolutely brilliant and fresh!</p>
+            <p class="testimonial-author">@pavarn_raju</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">Eyes closed, transported to another world. Pure magic.</p>
+            <p class="testimonial-author">@indumayee</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">Pure fire comeback. You reclaimed your sound perfectly.</p>
+            <p class="testimonial-author">@sidharthsa</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">Why are Mallus so cool? Everything is liberating.</p>
+            <p class="testimonial-author">@sahai.shekhar</p>
+        </div>
+        <div class="testimonial">
+            <p class="testimonial-text">South African-Indian fusion. Blessings to you all.</p>
+            <p class="testimonial-author">@BrandonCodes</p>
+        </div>
+    </div>
+</section>
+
+<!-- PRESS -->
+<section class="section section-green">
+    <h2 class="section-title">Press & Media</h2>
+    <p style="opacity: 0.7; font-size: 12px; margin-bottom: 35px;">Featured in Major Publications</p>
+
+    <div class="press-items">
+        <div class="press-item">
+            <div class="press-publication">MATHRUBHUMI</div>
+            <div class="press-headline">After all, we all trace back to Africa</div>
+        </div>
+        <div class="press-item">
+            <div class="press-publication">THE NEW INDIAN EXPRESS</div>
+            <div class="press-headline">Kerala's Shanka Tribe drops new EP Umoja</div>
+        </div>
+        <div class="press-item">
+            <div class="press-publication">ROLLING STONE</div>
+            <div class="press-headline">When Nature Calls by Shanka Tribe</div>
+        </div>
+        <div class="press-item">
+            <div class="press-publication">DECCAN HERALD</div>
+            <div class="press-headline">Creates tribal trance deep inside Western Ghats</div>
+        </div>
+        <div class="press-item">
+            <div class="press-publication">PINK LUNGI</div>
+            <div class="press-headline">Taking Tribal Trance to a Whole New Level</div>
+        </div>
+    </div>
+</section>
+
+<!-- CLOSING -->
+<section class="closing">
+    <h1>Thank You</h1>
+    <p class="closing-contact">www.shankatribe.in</p>
+    <p class="closing-contact">@shankatribe</p>
+    <p class="closing-contact"><a href="mailto:shankatribeofficial@gmail.com">shankatribeofficial@gmail.com</a></p>
+    <p class="closing-contact">+91 9663712223</p>
+</section>
+
+</body>
+</html>
