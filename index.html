@@ -399,18 +399,29 @@
             align-items: center;
             justify-content: center;
             flex: 0 1 auto;
-            opacity: 0.9;
-            transition: opacity 0.3s ease;
+            opacity: 0.95;
+            transition: all 0.3s ease;
+            background: rgba(255,255,255,0.15);
+            padding: 10px 15px;
+            border-radius: 4px;
         }
 
         .festival-item:hover {
             opacity: 1;
+            background: rgba(255,255,255,0.25);
         }
 
         .festival-item img {
             max-height: 100px;
             max-width: 150px;
             object-fit: contain;
+            filter: brightness(1.1);
+        }
+
+        .festival-item img[alt="The Lil Flea"] {
+            background: var(--dark-brown);
+            padding: 8px;
+            border-radius: 3px;
         }
 
         /* WHAT'S AHEAD */
@@ -805,11 +816,11 @@
         }
 
         .video-thumbnail {
-            width: 100px;
+            width: 100%;
             height: 70px;
             flex-shrink: 0;
             overflow: hidden;
-            border: 1px solid rgba(255,255,255,0.1);
+            border-bottom: 1px solid rgba(255,255,255,0.2);
         }
 
         .video-thumbnail img {
