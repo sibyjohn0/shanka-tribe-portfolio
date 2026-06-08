@@ -706,6 +706,126 @@
             line-height: 1.6;
         }
 
+        /* ELECTRONIC PRESS KIT */
+        .epk-cards {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 60px;
+            margin-top: 40px;
+        }
+
+        .epk-card {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            text-align: left;
+        }
+
+        .epk-card h3 {
+            font-size: 18px;
+            font-weight: 600;
+            color: var(--white);
+            margin-bottom: 10px;
+        }
+
+        .epk-card p {
+            font-size: 13px;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 20px;
+        }
+
+        .epk-link {
+            display: inline-block;
+            border: 1px solid rgba(255,255,255,0.4);
+            color: var(--cream);
+            padding: 8px 16px;
+            font-size: 12px;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .epk-link:hover {
+            background: rgba(255,255,255,0.1);
+            border-color: var(--cream);
+        }
+
+        .videos-heading {
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--white);
+            font-family: 'EB Garamond', serif;
+            margin: 40px 0 30px;
+        }
+
+        .videos-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .videos-column {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .video-category {
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--light-gray);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+        }
+
+        .video-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .video-item-card {
+            background: rgba(0,0,0,0.2);
+            border: 1px solid rgba(255,255,255,0.08);
+            padding: 15px;
+            display: flex;
+            gap: 15px;
+        }
+
+        .video-thumbnail {
+            width: 100px;
+            height: 70px;
+            flex-shrink: 0;
+            overflow: hidden;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .video-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .video-title {
+            font-size: 13px;
+            color: var(--cream);
+            font-weight: 500;
+            margin-bottom: 5px;
+            line-height: 1.4;
+        }
+
+        .video-link {
+            font-size: 12px;
+            color: var(--light-gray);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .video-link:hover {
+            color: var(--cream);
+        }
+
         /* CLOSING */
         .closing {
             background: linear-gradient(135deg, #6B5A4E 0%, #5A4A3E 100%);
@@ -1184,6 +1304,85 @@
                 <div class="press-headline">Taking Tribal Trance to a Whole New Level</div>
             </div>
         </a>
+    </div>
+</section>
+
+<!-- ELECTRONIC PRESS KIT -->
+<section class="section section-green">
+    <h2 class="section-title">Electronic Press Kit (EPK)</h2>
+
+    <div class="epk-cards">
+        <div class="epk-card">
+            <h3>Media Assets</h3>
+            <p>Full band bio, high-res photos, press releases</p>
+            <a href="#" class="epk-link">View here</a>
+        </div>
+        <div class="epk-card">
+            <h3>Technical Rider</h3>
+            <p>Light and Sound</p>
+            <a href="#" class="epk-link">View here</a>
+        </div>
+    </div>
+
+    <h3 class="videos-heading">Videos & Showreels</h3>
+
+    <div class="videos-container">
+        <div class="videos-column">
+            <h4 class="video-category">Music Videos</h4>
+            <div class="video-grid">
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page08_img00.png" alt="Travelling Gypsies"></div>
+                    <div class="video-title">Shanka Tribe | Travelling Gypsies ft. 6091</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page08_img01.png" alt="Travelling Gypsies Remix"></div>
+                    <div class="video-title">Travelling Gypsies (TERRA & Sajanka Remix)</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img04.png" alt="When Nature Calls"></div>
+                    <div class="video-title">Shanka Tribe | When Nature Calls</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img05.png" alt="UMOJA EP"></div>
+                    <div class="video-title">Shanka Tribe | EP | UMOJA</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img07.png" alt="Yele"></div>
+                    <div class="video-title">Yele - Shanka Tribe</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="videos-column">
+            <h4 class="video-category">Live Showreels</h4>
+            <div class="video-grid">
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img08.png" alt="Indieqaqa Kochi"></div>
+                    <div class="video-title">Shanka Tribe live at Indieqaqa Kochi</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img09.png" alt="Lil Flea Mumbai"></div>
+                    <div class="video-title">Shanka Tribe live at Lil Flea Mumbai</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img10.png" alt="Bloom in Green 2023"></div>
+                    <div class="video-title">Shanka Tribe live at Bloom in Green 2023</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+                <div class="video-item-card">
+                    <div class="video-thumbnail"><img src="./images/page13_img11.png" alt="Seematti Kochi"></div>
+                    <div class="video-title">Shanka Tribe | Seematti Kochi</div>
+                    <a href="https://youtube.com/@shankatribe" class="video-link">View here</a>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
