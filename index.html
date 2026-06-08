@@ -386,10 +386,9 @@
         .festivals-grid {
             display: flex;
             justify-content: center;
+            align-items: center;
             gap: 40px;
-            padding: 40px 60px;
-            background: var(--dark-brown);
-            margin: 0 -60px;
+            flex-wrap: wrap;
         }
 
         .festival-item {
@@ -475,16 +474,21 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0;
+            align-items: stretch;
         }
 
         .shows-left {
-            padding-right: 30px;
+            padding-right: 40px;
         }
 
         .shows-right {
             background: var(--dark-brown);
-            padding: 40px 60px;
+            padding: 0 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             margin: 0 -60px;
+            padding-right: calc(40px - 60px);
         }
 
         /* WHAT'S AHEAD */
