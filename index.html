@@ -460,6 +460,17 @@
             color: var(--cream);
         }
 
+        .community-press-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .community-column, .press-column {
+            display: flex;
+            flex-direction: column;
+        }
+
         /* WHAT'S AHEAD */
         .ahead-grid {
             display: grid;
@@ -1298,77 +1309,82 @@
     </div>
 </section>
 
-<!-- ECHO OF THE PEOPLE -->
+<!-- ECHO OF THE PEOPLE & PRESS -->
 <section class="section section-cream">
-    <h2 class="section-title">The Echo of the People</h2>
-    <p style="opacity: 0.6; font-size: 12px; margin-bottom: 35px; color: var(--text-gray);">6 Featured Community Voices</p>
+    <div class="community-press-container">
+        <div class="community-column">
+            <h2 class="section-title">The Echo of the People</h2>
+            <p style="opacity: 0.6; font-size: 12px; margin-bottom: 25px; color: var(--text-gray);">6 Featured Community Voices</p>
+            <div class="testimonials">
+                <div class="testimonial">
+                    <p class="testimonial-text">Masterpiece. UMOJA weaves djembe rhythms with Kerala soul into a 20-minute journey of pure unity.</p>
+                    <p class="testimonial-author">@thejoelutionary</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Most creative indie sound. Absolutely brilliant and fresh!</p>
+                    <p class="testimonial-author">@pavarn_raju</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Eyes closed, transported to another world. Pure magic.</p>
+                    <p class="testimonial-author">@indumayee</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Pure fire comeback. You reclaimed your sound perfectly.</p>
+                    <p class="testimonial-author">@sidharthsa</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">Why are Mallus so cool? Everything is liberating.</p>
+                    <p class="testimonial-author">@sahai.shekhar</p>
+                </div>
+                <div class="testimonial">
+                    <p class="testimonial-text">South African-Indian fusion. Blessings to you all.</p>
+                    <p class="testimonial-author">@BrandonCodes</p>
+                </div>
+            </div>
+        </div>
 
-    <div class="testimonials">
-        <div class="testimonial">
-            <p class="testimonial-text">Masterpiece. UMOJA weaves djembe rhythms with Kerala soul into a 20-minute journey of pure unity.</p>
-            <p class="testimonial-author">@thejoelutionary</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">Most creative indie sound. Absolutely brilliant and fresh!</p>
-            <p class="testimonial-author">@pavarn_raju</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">Eyes closed, transported to another world. Pure magic.</p>
-            <p class="testimonial-author">@indumayee</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">Pure fire comeback. You reclaimed your sound perfectly.</p>
-            <p class="testimonial-author">@sidharthsa</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">Why are Mallus so cool? Everything is liberating.</p>
-            <p class="testimonial-author">@sahai.shekhar</p>
-        </div>
-        <div class="testimonial">
-            <p class="testimonial-text">South African-Indian fusion. Blessings to you all.</p>
-            <p class="testimonial-author">@BrandonCodes</p>
-        </div>
-    </div>
-
-    <h3 style="font-size: 18px; font-weight: 600; margin-top: 50px; margin-bottom: 30px;">Press & Media Coverage</h3>
-
-    <div class="press-items">
-        <a href="https://english.mathrubhumi.com/features/specials/shanka-tribe-umoj-ep-unity-global-rhythms-x8wu6dyl" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">MATHRUBHUMI</div>
-                <div class="press-headline">After all, we all trace back to Africa</div>
+        <div class="press-column">
+            <h2 class="section-title">Press & Media</h2>
+            <p style="opacity: 0.7; font-size: 12px; margin-bottom: 25px; color: var(--text-gray);">Featured in Major Publications</p>
+            <div class="press-items">
+                <a href="https://english.mathrubhumi.com/features/specials/shanka-tribe-umoj-ep-unity-global-rhythms-x8wu6dyl" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">MATHRUBHUMI</div>
+                        <div class="press-headline">After all, we all trace back to Africa</div>
+                    </div>
+                </a>
+                <a href="https://www.newindianexpress.com/kerala/2025/Nov/11/keralas-shanka-tribe-drops-new-ep-umoja" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">THE NEW INDIAN EXPRESS</div>
+                        <div class="press-headline">Kerala's Shanka Tribe drops new EP Umoja</div>
+                    </div>
+                </a>
+                <a href="https://www.youtube.com/watch?v=FBcME__N1dY" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">CLUB FM</div>
+                        <div class="press-headline">Tribal Instruments Interview</div>
+                    </div>
+                </a>
+                <a href="https://svasalife.com/when-the-shankh-sounds/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">SVASALIFE</div>
+                        <div class="press-headline">When the Shankh Sounds</div>
+                    </div>
+                </a>
+                <a href="https://rollingstoneindia.com/new-music-archiesman-shanka-tribe-jennifer-rabha-rivita/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">ROLLING STONE</div>
+                        <div class="press-headline">When Nature Calls by Shanka Tribe</div>
+                    </div>
+                </a>
+                <a href="https://www.pinklungi.com/catch-up-shanka-tribe-the-instrumental-band-taking-tribal-trance-to-a-whole-new-level/" target="_blank" style="text-decoration: none; color: inherit;">
+                    <div class="press-item">
+                        <div class="press-publication">PINK LUNGI</div>
+                        <div class="press-headline">Taking Tribal Trance to a Whole New Level</div>
+                    </div>
+                </a>
             </div>
-        </a>
-        <a href="https://www.newindianexpress.com/kerala/2025/Nov/11/keralas-shanka-tribe-drops-new-ep-umoja" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">THE NEW INDIAN EXPRESS</div>
-                <div class="press-headline">Kerala's Shanka Tribe drops new EP Umoja</div>
-            </div>
-        </a>
-        <a href="https://www.youtube.com/watch?v=FBcME__N1dY" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">CLUB FM</div>
-                <div class="press-headline">Tribal Instruments Interview</div>
-            </div>
-        </a>
-        <a href="https://svasalife.com/when-the-shankh-sounds/" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">SVASALIFE</div>
-                <div class="press-headline">When the Shankh Sounds</div>
-            </div>
-        </a>
-        <a href="https://rollingstoneindia.com/new-music-archiesman-shanka-tribe-jennifer-rabha-rivita/" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">ROLLING STONE</div>
-                <div class="press-headline">When Nature Calls by Shanka Tribe</div>
-            </div>
-        </a>
-        <a href="https://www.pinklungi.com/catch-up-shanka-tribe-the-instrumental-band-taking-tribal-trance-to-a-whole-new-level/" target="_blank" style="text-decoration: none; color: inherit;">
-            <div class="press-item">
-                <div class="press-publication">PINK LUNGI</div>
-                <div class="press-headline">Taking Tribal Trance to a Whole New Level</div>
-            </div>
-        </a>
+        </div>
     </div>
 </section>
 
@@ -1392,13 +1408,8 @@
 </section>
 
 <!-- CLOSING -->
-<section class="closing">
-    <div class="closing-logo">
-        <img src="./images/page01_img00.png" alt="Shanka Tribe Logo">
-    </div>
-    <h1>SHANKATRIBE</h1>
-    <p class="closing-subtitle">Organic Trance • World Music</p>
-    <p class="closing-location">Kerala, India</p>
+<section class="closing" style="background: #2a2a2a; padding: 0; margin: 0; min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+    <img src="./images/page15_img00.png" alt="Closing Page" style="width: 100%; height: 100%; object-fit: cover;">
 </section>
 
 </body>
