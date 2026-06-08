@@ -474,11 +474,14 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 0;
-            align-items: center;
+            align-items: stretch;
         }
 
         .shows-left {
             padding-right: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .shows-right {
@@ -487,7 +490,7 @@
             justify-content: center;
             background: var(--dark-brown);
             margin: 0 -60px;
-            padding: 20px 60px;
+            padding: 30px 60px;
         }
 
         .shows-right .festivals-grid {
