@@ -471,6 +471,22 @@
             flex-direction: column;
         }
 
+        .shows-events-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0;
+        }
+
+        .shows-left {
+            padding-right: 30px;
+        }
+
+        .shows-right {
+            background: var(--dark-brown);
+            padding: 40px 60px;
+            margin: 0 -60px;
+        }
+
         /* WHAT'S AHEAD */
         .ahead-grid {
             display: grid;
@@ -1132,31 +1148,36 @@
             <div class="album-year">October 2025</div>
         </div>
     </div>
-    <div class="shows-title">100+ Live Shows</div>
-    <div class="festivals-grid">
-        <div class="festival-item">
-            <img src="./images/indiegaga-logo.avif" alt="Indiegaga">
+    <div class="shows-events-container">
+        <div class="shows-left">
+            <div class="shows-title">100+ Live Shows</div>
+            <h3 class="videos-heading">Live Events</h3>
+            <div class="live-events-single">
+                <div class="live-event-card">
+                    <div class="event-thumbnail"><img src="https://img.youtube.com/vi/Mc5cNqXMupA/maxresdefault.jpg" alt="Kochi Muziris Biennale"></div>
+                    <div class="event-title">Shanka Tribe Live at Kochi Muziris Biennale 2025</div>
+                    <a href="https://www.youtube.com/watch?v=Mc5cNqXMupA" target="_blank" class="event-link">Watch</a>
+                </div>
+            </div>
         </div>
-        <div class="festival-item">
-            <img src="./images/lil-flea-logo.png" alt="The Lil Flea">
-        </div>
-        <div class="festival-item">
-            <img src="./images/bloom-in-green-logo.jpeg" alt="Bloom in Green">
-        </div>
-        <div class="festival-item">
-            <img src="./images/echoes-of-earth-logo.webp" alt="Echoes of Earth">
-        </div>
-        <div class="festival-item">
-            <img src="./images/kochi-biennale-logo.svg" alt="Kochi Biennale Foundation">
-        </div>
-    </div>
-
-    <h3 class="videos-heading">Live Events</h3>
-    <div class="live-events-single">
-        <div class="live-event-card">
-            <div class="event-thumbnail"><img src="https://img.youtube.com/vi/Mc5cNqXMupA/maxresdefault.jpg" alt="Kochi Muziris Biennale"></div>
-            <div class="event-title">Shanka Tribe Live at Kochi Muziris Biennale 2025</div>
-            <a href="https://www.youtube.com/watch?v=Mc5cNqXMupA" target="_blank" class="event-link">Watch</a>
+        <div class="shows-right">
+            <div class="festivals-grid">
+                <div class="festival-item">
+                    <img src="./images/indiegaga-logo.avif" alt="Indiegaga">
+                </div>
+                <div class="festival-item">
+                    <img src="./images/lil-flea-logo.png" alt="The Lil Flea">
+                </div>
+                <div class="festival-item">
+                    <img src="./images/bloom-in-green-logo.jpeg" alt="Bloom in Green">
+                </div>
+                <div class="festival-item">
+                    <img src="./images/echoes-of-earth-logo.webp" alt="Echoes of Earth">
+                </div>
+                <div class="festival-item">
+                    <img src="./images/kochi-biennale-logo.svg" alt="Kochi Biennale Foundation">
+                </div>
+            </div>
         </div>
     </div>
 </section>
