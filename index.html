@@ -707,6 +707,13 @@
         .closing-contact a {
             color: var(--cream);
             text-decoration: none;
+            border-bottom: 1px solid rgba(232, 215, 188, 0.5);
+            transition: border-color 0.2s ease, opacity 0.2s ease;
+        }
+
+        .closing-contact a:hover {
+            border-bottom-color: var(--cream);
+            opacity: 0.9;
         }
 
         @media (max-width: 768px) {
@@ -1139,8 +1146,9 @@
 <!-- CLOSING -->
 <section class="closing">
     <h1>Thank You</h1>
-    <p class="closing-contact">www.shankatribe.in</p>
-    <p class="closing-contact">@shankatribe</p>
+    <p class="closing-contact"><a href="https://www.shankatribe.in" target="_blank">www.shankatribe.in</a></p>
+    <p class="closing-contact"><a href="https://instagram.com/shankatribe" target="_blank">@shankatribe</a></p>
+    <p class="closing-contact"><a href="https://youtube.com/@shankatribe" target="_blank">YouTube Channel</a></p>
     <p class="closing-contact"><a href="mailto:shankatribeofficial@gmail.com">shankatribeofficial@gmail.com</a></p>
     <p class="closing-contact">+91 9663712223</p>
 </section>
