@@ -406,6 +406,53 @@
             object-fit: contain;
         }
 
+        .live-events-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .live-event-card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid var(--light-gray);
+            padding: 15px;
+            text-align: center;
+        }
+
+        .event-thumbnail {
+            width: 100%;
+            aspect-ratio: 16/9;
+            overflow: hidden;
+            margin-bottom: 15px;
+            border: 1px solid var(--light-gray);
+        }
+
+        .event-thumbnail img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .event-title {
+            font-size: 13px;
+            color: var(--dark-brown);
+            font-weight: 600;
+            margin-bottom: 10px;
+            line-height: 1.4;
+        }
+
+        .event-link {
+            font-size: 12px;
+            color: var(--dark-brown);
+            text-decoration: underline;
+            transition: color 0.2s ease;
+        }
+
+        .event-link:hover {
+            color: var(--cream);
+        }
+
         /* WHAT'S AHEAD */
         .ahead-grid {
             display: grid;
@@ -1083,6 +1130,20 @@
         </div>
         <div class="festival-item">
             <img src="./images/kochi-biennale-logo.svg" alt="Kochi Biennale Foundation">
+        </div>
+    </div>
+
+    <h3 class="videos-heading">Live Events</h3>
+    <div class="live-events-grid">
+        <div class="live-event-card">
+            <div class="event-thumbnail"><img src="https://img.youtube.com/vi/Mc5cNqXMupA/maxresdefault.jpg" alt="Kochi Muziris Biennale"></div>
+            <div class="event-title">Shanka Tribe Live at Kochi Muziris Biennale 2025</div>
+            <a href="https://www.youtube.com/watch?v=Mc5cNqXMupA" target="_blank" class="event-link">Watch</a>
+        </div>
+        <div class="live-event-card">
+            <div class="event-thumbnail"><img src="" alt="Coming Soon"></div>
+            <div class="event-title">Coming Soon</div>
+            <a href="#" class="event-link">Coming Soon</a>
         </div>
     </div>
 </section>
