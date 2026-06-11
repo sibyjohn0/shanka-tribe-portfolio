@@ -319,8 +319,10 @@
         .tracks-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
             gap: 40px;
             margin-top: 30px;
+            flex: 1;
         }
 
         .track {
@@ -531,8 +533,10 @@
         .ahead-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr 1fr;
             gap: 25px;
             margin-top: 25px;
+            flex: 1;
         }
 
         .milestone-card {
@@ -540,6 +544,9 @@
             border: 1px solid rgba(255,255,255,0.15);
             padding: 32px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .milestone-title {
@@ -669,7 +676,8 @@
             grid-template-columns: auto 1fr;
             gap: 60px;
             margin-top: 20px;
-            align-items: start;
+            align-items: center;
+            flex: 1;
         }
 
         .yt-stat-circle {
@@ -702,6 +710,7 @@
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 15px;
+            align-items: stretch;
         }
 
         .yt-stat-box {
@@ -709,6 +718,9 @@
             border: 1px solid rgba(0,0,0,0.05);
             padding: 18px;
             text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .yt-stat-value {
@@ -728,6 +740,10 @@
         /* MUSIC VIDEOS */
         .videos-list {
             margin-top: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .video-item {
@@ -835,9 +851,11 @@
         .epk-cards {
             display: grid;
             grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
             gap: 30px;
             margin-bottom: 20px;
             margin-top: 20px;
+            flex: 1;
         }
 
         .epk-card {
@@ -845,6 +863,9 @@
             border: 1px solid rgba(255,255,255,0.1);
             padding: 30px;
             text-align: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
 
         .epk-card h3 {
