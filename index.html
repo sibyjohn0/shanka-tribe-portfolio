@@ -8,6 +8,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
+        @page {
+            size: A4 landscape;
+            margin: 0;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -23,6 +28,12 @@
             line-height: 1.7;
             color: #333;
             font-size: 16px;
+            background: #787878;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+            padding: 24px 0;
         }
 
         h1, h2, h3, h4, h5, h6, .section-title {
@@ -42,13 +53,15 @@
         .cover {
             background: linear-gradient(135deg, #8B7355 0%, #7A6B5F 50%, #6B5A4E 100%);
             color: var(--cream);
-            min-height: 100vh;
+            width: 297mm;
+            height: 210mm;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 60px 40px;
+            overflow: hidden;
         }
 
         .logo-container {
@@ -90,14 +103,15 @@
 
         /* SECTION BASE */
         .section {
-            padding: 70px 60px;
-            width: 100%;
+            padding: 50px 60px;
+            width: 297mm;
+            height: 210mm;
             margin: 0;
             box-sizing: border-box;
-            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
+            overflow: hidden;
         }
 
         .section-green {
@@ -122,7 +136,7 @@
             font-size: 42px;
             font-weight: 400;
             letter-spacing: 1px;
-            margin-bottom: 40px;
+            margin-bottom: 25px;
             text-transform: capitalize;
         }
 
@@ -172,8 +186,8 @@
         .instruments-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 45px 70px;
-            margin-top: 40px;
+            gap: 25px 50px;
+            margin-top: 25px;
         }
 
         .instrument-item {
@@ -203,18 +217,18 @@
 
         /* BAND MEMBERS */
         .band-container {
-            margin-top: 45px;
+            margin-top: 25px;
         }
 
         .band-row {
             display: flex;
-            justify-content: center;
+            justify-content: flex-start;
             gap: 18px;
             flex-wrap: wrap;
         }
 
         .band-member {
-            text-align: center;
+            text-align: left;
             flex: 0 0 auto;
             width: 130px;
         }
@@ -250,7 +264,7 @@
             grid-template-columns: 280px 1fr;
             gap: 80px;
             align-items: start;
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .umoja-cover {
@@ -299,8 +313,8 @@
         .tracks-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            margin-top: 50px;
+            gap: 40px;
+            margin-top: 30px;
         }
 
         .track {
@@ -340,7 +354,7 @@
             display: flex;
             justify-content: center;
             gap: 12px;
-            margin-top: 30px;
+            margin-top: 15px;
             flex-wrap: wrap;
         }
 
@@ -383,8 +397,8 @@
             font-size: 24px;
             font-weight: 400;
             text-align: center;
-            margin-top: 35px;
-            margin-bottom: 30px;
+            margin-top: 15px;
+            margin-bottom: 15px;
             color: var(--cream);
             font-family: 'EB Garamond', serif;
         }
@@ -422,7 +436,7 @@
             display: flex;
             justify-content: center;
             max-width: 600px;
-            margin: 30px auto;
+            margin: 12px auto 0;
         }
 
         .live-event-card {
@@ -511,8 +525,8 @@
         .ahead-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 35px;
-            margin-top: 45px;
+            gap: 25px;
+            margin-top: 25px;
         }
 
         .milestone-card {
@@ -543,8 +557,8 @@
         .spotify-main {
             display: grid;
             grid-template-columns: 240px 1fr;
-            gap: 80px;
-            margin-top: 40px;
+            gap: 60px;
+            margin-top: 20px;
             align-items: start;
         }
 
@@ -618,7 +632,7 @@
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             gap: 12px;
-            margin-top: 50px;
+            margin-top: 25px;
             grid-column: 1 / -1;
         }
 
@@ -648,7 +662,7 @@
             display: grid;
             grid-template-columns: auto 1fr;
             gap: 60px;
-            margin-top: 40px;
+            margin-top: 20px;
             align-items: start;
         }
 
@@ -707,7 +721,7 @@
 
         /* MUSIC VIDEOS */
         .videos-list {
-            margin-top: 40px;
+            margin-top: 20px;
         }
 
         .video-item {
@@ -747,8 +761,8 @@
         .testimonials {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 25px;
-            margin-top: 40px;
+            gap: 15px;
+            margin-top: 15px;
         }
 
         .testimonial {
@@ -777,7 +791,7 @@
 
         /* PRESS */
         .press-items {
-            margin-top: 40px;
+            margin-top: 15px;
         }
 
         .press-item {
@@ -816,8 +830,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             gap: 30px;
-            margin-bottom: 60px;
-            margin-top: 40px;
+            margin-bottom: 20px;
+            margin-top: 20px;
         }
 
         .epk-card {
@@ -860,7 +874,7 @@
             font-weight: 400;
             color: var(--white);
             font-family: 'EB Garamond', serif;
-            margin: 40px 0 30px;
+            margin: 15px 0 12px;
         }
 
         .videos-container {
@@ -935,13 +949,15 @@
         .closing {
             background: linear-gradient(135deg, #6B5A4E 0%, #5A4A3E 100%);
             color: var(--cream);
-            min-height: 100vh;
+            width: 297mm;
+            height: 210mm;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: center;
             padding: 60px 40px;
+            overflow: hidden;
         }
 
         .closing h1 {
@@ -969,14 +985,16 @@
             opacity: 0.9;
         }
 
-        @media (max-width: 768px) {
-            .section { padding: 50px 30px; }
-            .about-grid, .umoja-grid, .spotify-main, .youtube-main { grid-template-columns: 1fr; }
-            .instruments-grid, .ahead-grid, .testimonials { grid-template-columns: 1fr; }
-            .journey-grid { grid-template-columns: repeat(3, 1fr); }
-            .stats-bottom, .yt-stats-grid { grid-template-columns: repeat(2, 1fr); }
-            .section-title { font-size: 32px; }
-            .cover h1 { font-size: 48px; }
+        @media print {
+            body {
+                background: none;
+                gap: 0;
+                padding: 0;
+            }
+            .cover, .section, .closing {
+                page-break-after: always;
+                break-after: page;
+            }
         }
     </style>
 </head>
@@ -1226,7 +1244,7 @@
 <!-- SPOTIFY -->
 <section class="section section-dark">
     <h2 class="section-title">Spotify Insights</h2>
-    <p style="opacity: 0.65; font-size: 12px; margin-bottom: 35px;">Nov 16, 2024 – Nov 15, 2025 | Worldwide</p>
+    <p style="opacity: 0.65; font-size: 12px; margin-bottom: 15px;">Nov 16, 2024 – Nov 15, 2025 | Worldwide</p>
 
     <div class="spotify-main">
         <div class="stat-circle">
@@ -1292,7 +1310,7 @@
 <!-- YOUTUBE -->
 <section class="section section-cream">
     <h2 class="section-title">YouTube Analytics</h2>
-    <p style="opacity: 0.6; font-size: 12px; margin-bottom: 35px; color: var(--text-gray);">Lifetime | As of April 2026</p>
+    <p style="opacity: 0.6; font-size: 12px; margin-bottom: 15px; color: var(--text-gray);">Lifetime | As of April 2026</p>
 
     <div class="youtube-main">
         <div class="yt-stat-circle">
