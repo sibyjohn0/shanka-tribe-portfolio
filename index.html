@@ -152,7 +152,7 @@
         .about-grid {
             display: grid;
             grid-template-columns: 1fr 1.1fr;
-            gap: 80px;
+            gap: 50px;
             align-items: start;
         }
 
@@ -160,26 +160,29 @@
             font-size: 40px;
             color: var(--dark-brown);
             font-weight: 400;
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             line-height: 1.2;
             letter-spacing: 0.5px;
         }
 
         .about-text p {
-            font-size: 15px;
-            line-height: 1.8;
-            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 1.65;
+            margin-bottom: 12px;
             color: var(--text-gray);
         }
 
         .about-image {
             border: 1px solid var(--light-gray);
+            height: 510px;
+            overflow: hidden;
         }
 
         .about-image img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
             display: block;
-            height: auto;
         }
 
         /* INSTRUMENTS */
@@ -768,8 +771,8 @@
         .testimonial {
             background: var(--dark-brown);
             color: var(--cream);
-            padding: 28px;
-            min-height: 130px;
+            padding: 16px 20px;
+            min-height: 90px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -795,8 +798,8 @@
         }
 
         .press-item {
-            margin-bottom: 30px;
-            padding-bottom: 25px;
+            margin-bottom: 15px;
+            padding-bottom: 12px;
             border-bottom: 1px solid rgba(255,255,255,0.12);
             transition: opacity 0.2s ease;
             cursor: pointer;
@@ -1001,7 +1004,7 @@
 <body>
 
 <!-- COVER -->
-<section class="cover" style="background: url('./images/shanka-cover-closing.png') center/cover no-repeat; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0;">
+<section class="cover" style="background: url('./images/shanka-cover-closing.png') center/cover no-repeat;">
 </section>
 
 <!-- ABOUT -->
@@ -1371,7 +1374,7 @@
     <div class="community-press-container">
         <div class="community-column">
             <h2 class="section-title">The Echo of the People</h2>
-            <p style="opacity: 0.6; font-size: 12px; margin-bottom: 25px; color: var(--text-gray);">6 Featured Community Voices</p>
+            <p style="opacity: 0.6; font-size: 12px; margin-bottom: 12px; color: var(--text-gray);">6 Featured Community Voices</p>
             <div class="testimonials">
                 <div class="testimonial">
                     <p class="testimonial-text">Masterpiece. UMOJA weaves djembe rhythms with Kerala soul into a 20-minute journey of pure unity.</p>
@@ -1402,7 +1405,7 @@
 
         <div class="press-column">
             <h2 class="section-title">Press & Media</h2>
-            <p style="opacity: 0.7; font-size: 12px; margin-bottom: 25px; color: var(--text-gray);">Featured in Major Publications</p>
+            <p style="opacity: 0.7; font-size: 12px; margin-bottom: 12px; color: var(--text-gray);">Featured in Major Publications</p>
             <div class="press-items">
                 <a href="https://english.mathrubhumi.com/features/specials/shanka-tribe-umoj-ep-unity-global-rhythms-x8wu6dyl" target="_blank" style="text-decoration: none; color: inherit;">
                     <div class="press-item">
@@ -1465,7 +1468,7 @@
 </section>
 
 <!-- CLOSING -->
-<section class="closing" style="background: url('./images/shanka-cover-closing.png') center/cover no-repeat; min-height: 100vh; display: flex; align-items: center; justify-content: center; padding: 0; margin: 0;">
+<section class="closing" style="background: url('./images/shanka-cover-closing.png') center/cover no-repeat;">
 </section>
 
 </body>
